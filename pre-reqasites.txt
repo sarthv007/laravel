@@ -1,0 +1,33 @@
+Pre-reqasites for the application to run
+==================================
+software required
+1. PHP 7.1.31 
+2. composer
+3. git bash
+==================================
+Must change your default php.ini settings with given settings bellow.path to php.ini file is c:/xampp/php/php.ini 
+
+1. upload_max_filesize=30000M
+2. post_max_size=30000M
+3. memory_limit=10240M
+
+=====================================
+1. extract the zip file 
+2. paste the folder to htdocs inside xampp
+3. goto root directory and right click and select "Git bash here" it will open the terminal then run the commmand composer update
+4. then run the command php artisan key:generate
+5. create the database with name of your choice and then import the sql file from sql directory into newly created database
+6. update db details in .env file in root directory of application
+7. run the command php artisan serve
+8. goto browser ie google chrome and run http://localhost:8000/
+For student Login use this url http://localhost:8000/student-login
+
+
+Admin Url:http://localhost:8000/ 
+user id: admin1234 
+password:12312312
+
+Student Login: http://localhost:8000/student-login
+Login with any user id and password
+
+For importing users user csv file from sql/sample_file.csv file
